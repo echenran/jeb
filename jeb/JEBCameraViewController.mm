@@ -9,6 +9,16 @@
 #import "JEBCameraViewController.h"
 #import "JEBObjectLabel.h"
 #import "JEBPopover.h"
+#include "MyUtils.h"
+#include "network.h"
+#include "region_layer.h"
+#include "cost_layer.h"
+#include "utils.h"
+#include "parser.h"
+#include "box.h"
+#include "demo.h"
+#include "option_list.h"
+#include "list.h"
 
 
 //#ifdef OPENCV
@@ -128,7 +138,10 @@ static NSString *const JEBXFont = @"Avenir-Black";
     int frame_skip = 0;
     char* prefix = NULL;
     int hier_thresh = .5;
-    //demo("tiny-yolo.cfg", "tiny-yolo.weights", thresh, cam_index, filename, names, classes, frame_skip, prefix, hier_thresh);
+    
+    char* tinyyolocfgpath = [utilobj getPath:@"tiny-yolo" :@"cfg" :@"."];
+    char* tinyyoloweightspath = [utilobj getPath:@"tiny-yolo" :@"weights" :@"."];
+    demo(tinyyolocfgpath, tinyyoloweightspath, thresh, cam_index, filename, names, classes, frame_skip, prefix, hier_thresh);
     
   }
   else

@@ -20,6 +20,9 @@
 #include "demo.h"
 #include "option_list.h"
 #include "list.h"
+
+#import <opencv2/highgui/cap_ios.h>
+#include <opencv2/opencv.hpp>
 //#import "../opencv.hpp"
 
 @interface JEBCameraViewController : UIViewController

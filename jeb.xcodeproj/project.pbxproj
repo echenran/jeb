@@ -14,13 +14,22 @@
 		000D039D1E3433490030B877 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 000D039B1E3433490030B877 /* LaunchScreen.storyboard */; };
 		000D03A81E34334A0030B877 /* jebTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 000D03A71E34334A0030B877 /* jebTests.m */; };
 		000D03B31E34334A0030B877 /* jebUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 000D03B21E34334A0030B877 /* jebUITests.m */; };
+		0033896B1E347E1600EB7BF6 /* libc++.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0033896A1E347E1600EB7BF6 /* libc++.1.dylib */; };
 		004FCE721E345A6600C77C48 /* coco.data in Resources */ = {isa = PBXBuildFile; fileRef = 004FCE711E345A6600C77C48 /* coco.data */; };
 		004FCE751E345AAA00C77C48 /* tiny-yolo.weights in Resources */ = {isa = PBXBuildFile; fileRef = 009E69011E343EEB00B67606 /* tiny-yolo.weights */; };
 		004FCE761E345ABB00C77C48 /* tiny-yolo.cfg in Resources */ = {isa = PBXBuildFile; fileRef = 004FCE731E345A8200C77C48 /* tiny-yolo.cfg */; };
 		004FCE7F1E3471AB00C77C48 /* MyUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 004FCE7E1E3471AB00C77C48 /* MyUtils.m */; };
 		004FCE821E34743E00C77C48 /* coco.names in Resources */ = {isa = PBXBuildFile; fileRef = 004FCE801E3473ED00C77C48 /* coco.names */; };
+		004FCE841E34771500C77C48 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 004FCE831E34771500C77C48 /* opencv2.framework */; };
+		004FCE861E3477DE00C77C48 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 004FCE851E3477DE00C77C48 /* AssetsLibrary.framework */; };
+		004FCE881E3477E700C77C48 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 004FCE871E3477E700C77C48 /* CoreGraphics.framework */; };
+		004FCE8A1E3477EF00C77C48 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 004FCE891E3477EF00C77C48 /* CoreImage.framework */; };
+		004FCE8C1E3477F600C77C48 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 004FCE8B1E3477F600C77C48 /* CoreMedia.framework */; };
+		004FCE8E1E3477FC00C77C48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 004FCE8D1E3477FC00C77C48 /* Foundation.framework */; };
+		004FCE901E34780300C77C48 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 004FCE8F1E34780300C77C48 /* UIKit.framework */; };
+		004FCE921E34780800C77C48 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 004FCE911E34780800C77C48 /* Accelerate.framework */; };
 		009E61DB1E34399000B67606 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 009E61DA1E34399000B67606 /* AVFoundation.framework */; };
-		009E61E21E343E4000B67606 /* JEBCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 009E61DD1E343E4000B67606 /* JEBCameraViewController.m */; };
+		009E61E21E343E4000B67606 /* JEBCameraViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 009E61DD1E343E4000B67606 /* JEBCameraViewController.mm */; };
 		009E61E31E343E4000B67606 /* JEBObjectLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 009E61DF1E343E4000B67606 /* JEBObjectLabel.m */; };
 		009E61E41E343E4000B67606 /* JEBPopover.m in Sources */ = {isa = PBXBuildFile; fileRef = 009E61E11E343E4000B67606 /* JEBPopover.m */; };
 		009E61E71E343E4B00B67606 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 009E61E61E343E4B00B67606 /* AppDelegate.m */; };
@@ -114,7 +123,6 @@
 		009E62DA1E343EC400B67606 /* rnn.train.cfg in Resources */ = {isa = PBXBuildFile; fileRef = 009E62B01E343EC300B67606 /* rnn.train.cfg */; };
 		009E62DB1E343EC400B67606 /* strided.cfg in Resources */ = {isa = PBXBuildFile; fileRef = 009E62B11E343EC300B67606 /* strided.cfg */; };
 		009E62DC1E343EC400B67606 /* t1.test.cfg in Resources */ = {isa = PBXBuildFile; fileRef = 009E62B21E343EC300B67606 /* t1.test.cfg */; };
-		009E62DD1E343EC400B67606 /* tiny-yolo-voc.cfg in Resources */ = {isa = PBXBuildFile; fileRef = 009E62B31E343EC300B67606 /* tiny-yolo-voc.cfg */; };
 		009E62DF1E343EC400B67606 /* tiny.cfg in Resources */ = {isa = PBXBuildFile; fileRef = 009E62B51E343EC300B67606 /* tiny.cfg */; };
 		009E62E01E343EC400B67606 /* vgg-16.cfg in Resources */ = {isa = PBXBuildFile; fileRef = 009E62B61E343EC300B67606 /* vgg-16.cfg */; };
 		009E62E11E343EC400B67606 /* vgg-conv.cfg in Resources */ = {isa = PBXBuildFile; fileRef = 009E62B71E343EC300B67606 /* vgg-conv.cfg */; };
@@ -934,15 +942,26 @@
 		000D03AE1E34334A0030B877 /* jebUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = jebUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		000D03B21E34334A0030B877 /* jebUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = jebUITests.m; sourceTree = "<group>"; };
 		000D03B41E34334A0030B877 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0033896A1E347E1600EB7BF6 /* libc++.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.1.dylib"; path = "../../../../usr/lib/libc++.1.dylib"; sourceTree = "<group>"; };
+		0033896C1E347E2E00EB7BF6 /* libSystem.B.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libSystem.B.dylib; path = ../../../../usr/lib/libSystem.B.dylib; sourceTree = "<group>"; };
 		004FCE711E345A6600C77C48 /* coco.data */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = coco.data; sourceTree = "<group>"; };
 		004FCE731E345A8200C77C48 /* tiny-yolo.cfg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "tiny-yolo.cfg"; sourceTree = "<group>"; };
 		004FCE7D1E3471AB00C77C48 /* MyUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyUtils.h; sourceTree = "<group>"; };
 		004FCE7E1E3471AB00C77C48 /* MyUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyUtils.m; sourceTree = "<group>"; };
 		004FCE801E3473ED00C77C48 /* coco.names */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = coco.names; sourceTree = "<group>"; };
+		004FCE831E34771500C77C48 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../../../../Library/Frameworks/opencv2.framework; sourceTree = "<group>"; };
+		004FCE851E3477DE00C77C48 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		004FCE871E3477E700C77C48 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		004FCE891E3477EF00C77C48 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		004FCE8B1E3477F600C77C48 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		004FCE8D1E3477FC00C77C48 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		004FCE8F1E34780300C77C48 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		004FCE911E34780800C77C48 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		004FCE931E34797B00C77C48 /* jeb.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = jeb.pch; sourceTree = "<group>"; };
 		0086640F1E3443C4000196E0 /* thisfile.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = thisfile.txt; sourceTree = "<group>"; };
 		009E61DA1E34399000B67606 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		009E61DC1E343E4000B67606 /* JEBCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JEBCameraViewController.h; sourceTree = "<group>"; };
-		009E61DD1E343E4000B67606 /* JEBCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JEBCameraViewController.m; sourceTree = "<group>"; };
+		009E61DD1E343E4000B67606 /* JEBCameraViewController.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = JEBCameraViewController.mm; sourceTree = "<group>"; };
 		009E61DE1E343E4000B67606 /* JEBObjectLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JEBObjectLabel.h; sourceTree = "<group>"; };
 		009E61DF1E343E4000B67606 /* JEBObjectLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JEBObjectLabel.m; sourceTree = "<group>"; };
 		009E61E01E343E4000B67606 /* JEBPopover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JEBPopover.h; sourceTree = "<group>"; };
@@ -1882,6 +1901,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0033896B1E347E1600EB7BF6 /* libc++.1.dylib in Frameworks */,
+				004FCE921E34780800C77C48 /* Accelerate.framework in Frameworks */,
+				004FCE901E34780300C77C48 /* UIKit.framework in Frameworks */,
+				004FCE8E1E3477FC00C77C48 /* Foundation.framework in Frameworks */,
+				004FCE8C1E3477F600C77C48 /* CoreMedia.framework in Frameworks */,
+				004FCE8A1E3477EF00C77C48 /* CoreImage.framework in Frameworks */,
+				004FCE881E3477E700C77C48 /* CoreGraphics.framework in Frameworks */,
+				004FCE861E3477DE00C77C48 /* AssetsLibrary.framework in Frameworks */,
+				004FCE841E34771500C77C48 /* opencv2.framework in Frameworks */,
 				009E61DB1E34399000B67606 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1937,7 +1965,7 @@
 				009E61E51E343E4B00B67606 /* AppDelegate.h */,
 				009E61E61E343E4B00B67606 /* AppDelegate.m */,
 				009E61DC1E343E4000B67606 /* JEBCameraViewController.h */,
-				009E61DD1E343E4000B67606 /* JEBCameraViewController.m */,
+				009E61DD1E343E4000B67606 /* JEBCameraViewController.mm */,
 				009E61DE1E343E4000B67606 /* JEBObjectLabel.h */,
 				009E61DF1E343E4000B67606 /* JEBObjectLabel.m */,
 				009E61E01E343E4000B67606 /* JEBPopover.h */,
@@ -1949,6 +1977,7 @@
 				000D039B1E3433490030B877 /* LaunchScreen.storyboard */,
 				000D039E1E3433490030B877 /* Info.plist */,
 				000D038D1E3433490030B877 /* Supporting Files */,
+				004FCE931E34797B00C77C48 /* jeb.pch */,
 			);
 			path = jeb;
 			sourceTree = "<group>";
@@ -1983,6 +2012,16 @@
 		009E61D91E34399000B67606 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0033896C1E347E2E00EB7BF6 /* libSystem.B.dylib */,
+				0033896A1E347E1600EB7BF6 /* libc++.1.dylib */,
+				004FCE911E34780800C77C48 /* Accelerate.framework */,
+				004FCE8F1E34780300C77C48 /* UIKit.framework */,
+				004FCE8D1E3477FC00C77C48 /* Foundation.framework */,
+				004FCE8B1E3477F600C77C48 /* CoreMedia.framework */,
+				004FCE891E3477EF00C77C48 /* CoreImage.framework */,
+				004FCE871E3477E700C77C48 /* CoreGraphics.framework */,
+				004FCE851E3477DE00C77C48 /* AssetsLibrary.framework */,
+				004FCE831E34771500C77C48 /* opencv2.framework */,
 				009E61DA1E34399000B67606 /* AVFoundation.framework */,
 			);
 			name = Frameworks;
@@ -3367,7 +3406,6 @@
 				009E66501E343ED000B67606 /* 109_3.png in Resources */,
 				009E68FF1E343ED100B67606 /* scream.jpg in Resources */,
 				009E682C1E343ED000B67606 /* 73_7.png in Resources */,
-				009E62DD1E343EC400B67606 /* tiny-yolo-voc.cfg in Resources */,
 				009E66661E343ED000B67606 /* 112_1.png in Resources */,
 				009E685A1E343ED000B67606 /* 79_5.png in Resources */,
 				009E66BF1E343ED000B67606 /* 123_2.png in Resources */,
@@ -3918,7 +3956,7 @@
 				009E625E1E343EB900B67606 /* blas.c in Sources */,
 				009E625D1E343EB900B67606 /* batchnorm_layer.c in Sources */,
 				009E628F1E343EB900B67606 /* rnn_vid.c in Sources */,
-				009E61E21E343E4000B67606 /* JEBCameraViewController.m in Sources */,
+				009E61E21E343E4000B67606 /* JEBCameraViewController.mm in Sources */,
 				009E62601E343EB900B67606 /* box.c in Sources */,
 				009E628A1E343EB900B67606 /* parser.c in Sources */,
 				009E628C1E343EB900B67606 /* reorg_layer.c in Sources */,
@@ -4121,11 +4159,28 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 96KZQ57BAY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+					/usr/local/Cellar/opencv/2.4.13.2/include/,
+					/usr/lib,
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+					/usr/local/Cellar/opencv/2.4.13.2/include/,
+					/usr/lib,
+				);
 				INFOPLIST_FILE = jeb/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_DYLIB_INSTALL_NAME = "/usr/lib/libc++.dylib";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks /usr/lib";
+				LIBRARY_SEARCH_PATHS = (
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+					/usr/local/Cellar/opencv/2.4.13.2/include/,
+					/usr/lib,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ecr.jeb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				REEXPORTED_LIBRARY_PATHS = "";
 			};
 			name = Debug;
 		};
@@ -4135,11 +4190,28 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 96KZQ57BAY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+					/usr/local/Cellar/opencv/2.4.13.2/include/,
+					/usr/lib,
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+					/usr/local/Cellar/opencv/2.4.13.2/include/,
+					/usr/lib,
+				);
 				INFOPLIST_FILE = jeb/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_DYLIB_INSTALL_NAME = "/usr/lib/libc++.dylib";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks /usr/lib";
+				LIBRARY_SEARCH_PATHS = (
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+					/usr/local/Cellar/opencv/2.4.13.2/include/,
+					/usr/lib,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ecr.jeb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				REEXPORTED_LIBRARY_PATHS = "";
 			};
 			name = Release;
 		};
