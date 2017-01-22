@@ -1,3 +1,7 @@
+#if defined __cplusplus
+extern "C" {
+#endif
+
 #ifndef OPTION_LIST_H
 #define OPTION_LIST_H
 #include "list.h"
@@ -20,4 +24,8 @@ float option_find_float(list *l, char *key, float def);
 float option_find_float_quiet(list *l, char *key, float def);
 void option_unused(list *l);
 
+#endif
+
+#ifdef __cplusplus
+}
 #endif

@@ -1,3 +1,8 @@
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
 #ifndef LIST_H
 #define LIST_H
 
@@ -23,4 +28,8 @@ void **list_to_array(list *l);
 void free_list(list *l);
 void free_list_contents(list *l);
 
+#endif
+
+#ifdef __cplusplus
+}
 #endif

@@ -9,7 +9,6 @@
 #import "JEBCameraViewController.h"
 #import "JEBObjectLabel.h"
 #import "JEBPopover.h"
-#include "MyUtils.h"
 #include "network.h"
 #include "region_layer.h"
 #include "cost_layer.h"
@@ -21,9 +20,9 @@
 #include "list.h"
 
 
-//#ifdef OPENCV
-//#include "opencv2/highgui/highgui_c.h"
-//#endif
+#ifdef OPENCV
+#include "opencv2/highgui/highgui_c.h"
+#endif
 
 
 static const int WIDTH_MARGIN = 50;
@@ -142,7 +141,7 @@ static NSString *const JEBXFont = @"Avenir-Black";
     char* tinyyolocfgpath = [utilobj getPath:@"tiny-yolo" :@"cfg" :@"."];
     char* tinyyoloweightspath = [utilobj getPath:@"tiny-yolo" :@"weights" :@"."];
     demo(tinyyolocfgpath, tinyyoloweightspath, thresh, cam_index, filename, names, classes, frame_skip, prefix, hier_thresh);
-    
+
   }
   else
   {

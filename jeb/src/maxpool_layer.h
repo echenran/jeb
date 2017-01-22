@@ -1,3 +1,8 @@
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
 #ifndef MAXPOOL_LAYER_H
 #define MAXPOOL_LAYER_H
 
@@ -21,3 +26,6 @@ void backward_maxpool_layer_gpu(maxpool_layer l, network_state state);
 
 #endif
 
+#ifdef __cplusplus
+}
+#endif

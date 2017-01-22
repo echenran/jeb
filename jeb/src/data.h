@@ -1,3 +1,7 @@
+#if defined __cplusplus
+extern "C" {
+#endif
+
 #ifndef DATA_H
 #define DATA_H
 #include <pthread.h>
@@ -107,4 +111,8 @@ data concat_data(data d1, data d2);
 data concat_datas(data *d, int n);
 void fill_truth(char *path, char **labels, int k, float *truth);
 
+#endif
+
+#ifdef __cplusplus
+}
 #endif

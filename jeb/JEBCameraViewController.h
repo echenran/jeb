@@ -17,6 +17,7 @@
 #include "utils.h"
 #include "parser.h"
 #include "box.h"
+#include "data.h"
 #include "demo.h"
 #include "option_list.h"
 #include "list.h"
@@ -33,5 +34,6 @@
 
 - (void) initializeCaptureSession; //initialize the cameraCaptureSession, link cameraPreviewLayer with
 //cameraCaptureSession, and add cameraCaptureSession to the view
+
 
 @end
