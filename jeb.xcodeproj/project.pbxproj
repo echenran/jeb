@@ -17,6 +17,8 @@
 		004FCE721E345A6600C77C48 /* coco.data in Resources */ = {isa = PBXBuildFile; fileRef = 004FCE711E345A6600C77C48 /* coco.data */; };
 		004FCE751E345AAA00C77C48 /* tiny-yolo.weights in Resources */ = {isa = PBXBuildFile; fileRef = 009E69011E343EEB00B67606 /* tiny-yolo.weights */; };
 		004FCE761E345ABB00C77C48 /* tiny-yolo.cfg in Resources */ = {isa = PBXBuildFile; fileRef = 004FCE731E345A8200C77C48 /* tiny-yolo.cfg */; };
+		004FCE7F1E3471AB00C77C48 /* MyUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 004FCE7E1E3471AB00C77C48 /* MyUtils.m */; };
+		004FCE821E34743E00C77C48 /* coco.names in Resources */ = {isa = PBXBuildFile; fileRef = 004FCE801E3473ED00C77C48 /* coco.names */; };
 		009E61DB1E34399000B67606 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 009E61DA1E34399000B67606 /* AVFoundation.framework */; };
 		009E61E21E343E4000B67606 /* JEBCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 009E61DD1E343E4000B67606 /* JEBCameraViewController.m */; };
 		009E61E31E343E4000B67606 /* JEBObjectLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 009E61DF1E343E4000B67606 /* JEBObjectLabel.m */; };
@@ -934,6 +936,9 @@
 		000D03B41E34334A0030B877 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		004FCE711E345A6600C77C48 /* coco.data */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = coco.data; sourceTree = "<group>"; };
 		004FCE731E345A8200C77C48 /* tiny-yolo.cfg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "tiny-yolo.cfg"; sourceTree = "<group>"; };
+		004FCE7D1E3471AB00C77C48 /* MyUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyUtils.h; sourceTree = "<group>"; };
+		004FCE7E1E3471AB00C77C48 /* MyUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyUtils.m; sourceTree = "<group>"; };
+		004FCE801E3473ED00C77C48 /* coco.names */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = coco.names; sourceTree = "<group>"; };
 		0086640F1E3443C4000196E0 /* thisfile.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = thisfile.txt; sourceTree = "<group>"; };
 		009E61DA1E34399000B67606 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		009E61DC1E343E4000B67606 /* JEBCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JEBCameraViewController.h; sourceTree = "<group>"; };
@@ -1096,7 +1101,6 @@
 		009E62F01E343ECC00B67606 /* 9k.labels */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 9k.labels; sourceTree = "<group>"; };
 		009E62F11E343ECC00B67606 /* 9k.names */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 9k.names; sourceTree = "<group>"; };
 		009E62F21E343ECC00B67606 /* 9k.tree */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 9k.tree; sourceTree = "<group>"; };
-		009E62F31E343ECC00B67606 /* coco.names */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = coco.names; sourceTree = "<group>"; };
 		009E62F41E343ECC00B67606 /* coco9k.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = coco9k.map; sourceTree = "<group>"; };
 		009E62F51E343ECC00B67606 /* dog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dog.jpg; sourceTree = "<group>"; };
 		009E62F61E343ECC00B67606 /* eagle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = eagle.jpg; sourceTree = "<group>"; };
@@ -1926,6 +1930,7 @@
 				009E69011E343EEB00B67606 /* tiny-yolo.weights */,
 				004FCE731E345A8200C77C48 /* tiny-yolo.cfg */,
 				004FCE711E345A6600C77C48 /* coco.data */,
+				004FCE801E3473ED00C77C48 /* coco.names */,
 				009E62EF1E343ECC00B67606 /* data */,
 				009E629B1E343EC300B67606 /* cfg */,
 				009E61E81E343EB900B67606 /* src */,
@@ -1937,6 +1942,8 @@
 				009E61DF1E343E4000B67606 /* JEBObjectLabel.m */,
 				009E61E01E343E4000B67606 /* JEBPopover.h */,
 				009E61E11E343E4000B67606 /* JEBPopover.m */,
+				004FCE7D1E3471AB00C77C48 /* MyUtils.h */,
+				004FCE7E1E3471AB00C77C48 /* MyUtils.m */,
 				000D03961E3433490030B877 /* Main.storyboard */,
 				000D03991E3433490030B877 /* Assets.xcassets */,
 				000D039B1E3433490030B877 /* LaunchScreen.storyboard */,
@@ -2158,7 +2165,6 @@
 				009E62F01E343ECC00B67606 /* 9k.labels */,
 				009E62F11E343ECC00B67606 /* 9k.names */,
 				009E62F21E343ECC00B67606 /* 9k.tree */,
-				009E62F31E343ECC00B67606 /* coco.names */,
 				009E62F41E343ECC00B67606 /* coco9k.map */,
 				009E62F51E343ECC00B67606 /* dog.jpg */,
 				009E62F61E343ECC00B67606 /* eagle.jpg */,
@@ -3051,6 +3057,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				004FCE821E34743E00C77C48 /* coco.names in Resources */,
 				004FCE761E345ABB00C77C48 /* tiny-yolo.cfg in Resources */,
 				004FCE751E345AAA00C77C48 /* tiny-yolo.weights in Resources */,
 				0008C45C1E34478A005BF312 /* thisfile.txt in Resources */,
@@ -3948,6 +3955,7 @@
 				009E62751E343EB900B67606 /* detector.c in Sources */,
 				009E62641E343EB900B67606 /* coco.c in Sources */,
 				009E625A1E343EB900B67606 /* art.c in Sources */,
+				004FCE7F1E3471AB00C77C48 /* MyUtils.m in Sources */,
 				009E627E1E343EB900B67606 /* image.c in Sources */,
 				009E62941E343EB900B67606 /* swag.c in Sources */,
 				009E62821E343EB900B67606 /* matrix.c in Sources */,

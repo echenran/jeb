@@ -10,6 +10,7 @@
 #import <AVFoundation/AVFoundation.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include "MyUtils.h"
 #include "network.h"
 #include "region_layer.h"
 #include "cost_layer.h"

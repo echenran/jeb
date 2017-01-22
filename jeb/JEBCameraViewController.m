@@ -109,28 +109,25 @@ static NSString *const JEBXFont = @"Avenir-Black";
     // Start running!
     [cameraCaptureSession startRunning];
     
-    //char* path = "coco.data";
-    //list* options = read_data_cfg("cfg/coco.data");
-      NSString* filepath = [[NSBundle mainBundle] pathForResource:@"coco" ofType:@"data" inDirectory:@"."];
-      NSLog(@"\n\nthe string %@", filepath);
-      FILE* txtfile = fopen([filepath cStringUsingEncoding:NSASCIIStringEncoding], "r");
-      int c;
-      if (txtfile) {
-        while ((c = getc(txtfile)) != EOF)
-            putchar(c);
-        fclose(txtfile);
-    }
-    if (txtfile == 0)
-        printf("point is at %p\n", txtfile);
-    /*int classes = option_find_int(options, "classes", 20);
-    char* name_list = option_find_str(options, "names", "data/names.list");
-    char** names = get_labels(name_list);
+
+    MyUtils *utilobj = [[MyUtils alloc] init];
+    
+    char* cocodatapath = [utilobj getPath:@"coco" :@"data" :@"."];
+    list* options = read_data_cfg(cocodatapath);
+      printf("Coco.data path: %s\n", cocodatapath);
+    
+    int classes = option_find_int(options, "classes", 20);
+
+    char* coconamespath = [utilobj getPath:@"coco" :@"names" :@"."];
+    printf("Coco.names path: %s\n", coconamespath);
+    //char* name_list = coconamespath;
+    char** names = get_labels(coconamespath);
     float thresh = .24;
     int cam_index = 0;
     char* filename = NULL;
     int frame_skip = 0;
     char* prefix = NULL;
-    int hier_thresh = .5;*/
+    int hier_thresh = .5;
     //demo("tiny-yolo.cfg", "tiny-yolo.weights", thresh, cam_index, filename, names, classes, frame_skip, prefix, hier_thresh);
     
   }
